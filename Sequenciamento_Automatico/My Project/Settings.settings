@@ -1,7 +1,21 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" UseMySettingsClassName="true">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\\Users\\%username%  \\Documents\\Teste</Value>
+    </Setting>
+    <Setting Name="startsequencing" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">1962-10-11</Value>
+    </Setting>
+    <Setting Name="finishsequencing" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">1963-11-16</Value>
+    </Setting>
+    <Setting Name="npexceptionday" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="pstandarday" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Monday Tuesday Wednesday Thursday Friday </Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

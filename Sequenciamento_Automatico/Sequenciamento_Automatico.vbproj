@@ -25,18 +25,41 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Sequenciamento_Automatico</RootNamespace>
     <AssemblyName>Sequenciamento_Automatico</AssemblyName>
-    <LoadBehavior>3</LoadBehavior>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <StartupObject>
     </StartupObject>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <BootstrapperComponentsLocation>HomeSite</BootstrapperComponentsLocation>
+    <PublishUrl>C:\Users\felix\Desktop\_EUROFARMA\PUBLICAR\</PublishUrl>
+    <InstallUrl />
+    <TargetCulture>pt-BR</TargetCulture>
+    <ApplicationVersion>1.0.0.48</ApplicationVersion>
+    <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>days</UpdateIntervalUnits>
+    <ProductName>Sequenciamento_Automatico</ProductName>
+    <PublisherName />
+    <SupportUrl />
+    <FriendlyName>Sequenciamento_Automatico</FriendlyName>
+    <OfficeApplicationDescription />
+    <LoadBehavior>3</LoadBehavior>
   </PropertyGroup>
   <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
       <Visible>False</Visible>
-      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft Visual Studio 2010 Tools para Office Runtime %28x86 e x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
@@ -181,9 +204,85 @@
   -->
   <ItemGroup>
     <AppDesigner Include="My Project\" />
+    <Compile Include="Form_CalendarAddNPExceptionDay.Designer.vb">
+      <DependentUpon>Form_CalendarAddNPExceptionDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CalendarAddNPExceptionDay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CalendarFinishSequencing.Designer.vb">
+      <DependentUpon>Form_CalendarFinishSequencing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CalendarFinishSequencing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CalendarStartSequencing.Designer.vb">
+      <DependentUpon>Form_CalendarStartSequencing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CalendarStartSequencing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ImportDirectory.Designer.vb">
+      <DependentUpon>Form_ImportDirectory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ImportDirectory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_IntervalSequenceControl.Designer.vb">
+      <DependentUpon>Form_IntervalSequenceControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_IntervalSequenceControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_NPExceptionDay.Designer.vb">
+      <DependentUpon>Form_NPExceptionDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_NPExceptionDay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PStandardDay.Designer.vb">
+      <DependentUpon>Form_PStandardDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PStandardDay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ribbonbar1.Designer.vb">
+      <DependentUpon>Ribbonbar1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ribbonbar1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
     <Compile Include="ThisAddIn.vb">
       <SubType>Code</SubType>
     </Compile>
+    <EmbeddedResource Include="Form_CalendarAddNPExceptionDay.resx">
+      <DependentUpon>Form_CalendarAddNPExceptionDay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CalendarFinishSequencing.resx">
+      <DependentUpon>Form_CalendarFinishSequencing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CalendarStartSequencing.resx">
+      <DependentUpon>Form_CalendarStartSequencing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ImportDirectory.resx">
+      <DependentUpon>Form_ImportDirectory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_IntervalSequenceControl.resx">
+      <DependentUpon>Form_IntervalSequenceControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_NPExceptionDay.resx">
+      <DependentUpon>Form_NPExceptionDay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PStandardDay.resx">
+      <DependentUpon>Form_PStandardDay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ribbonbar1.resx">
+      <DependentUpon>Ribbonbar1.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="images\imagepdays.png" />
+    <None Include="Sequenciamento_Automatico_TemporaryKey.pfx" />
     <None Include="ThisAddIn.Designer.xml">
       <DependentUpon>ThisAddIn.vb</DependentUpon>
     </None>
@@ -212,6 +311,21 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\imageconfig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\imagedirectory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\imagetimer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\imagenpexception.png" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -225,6 +339,15 @@
   <PropertyGroup>
     <OptionStrict>Off</OptionStrict>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Sequenciamento_Automatico_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FCCF1A41DBDF03EF6B18CD5362AB186B8283DBCF</ManifestCertificateThumbprint>
+  </PropertyGroup>
   <!-- Include the build rules for a Visual Basic project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- Include additional build rules for an Office application add-in. -->
@@ -234,8 +357,8 @@
     <VisualStudio>
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
         <ProjectProperties HostName="Excel" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="Excel" Language="vb" TemplatesPath="" DebugInfoExeName="#Software\Microsoft\Office\16.0\Excel\InstallRoot\Path#excel.exe" DebugInfoCommandLine="/x" AddItemTemplatesGuid="{DCFE8D25-4715-4C33-9EAB-A34A9EBC9544}" />
-        <Host Name="Excel" IconIndex="0">
-          <HostItem Name="ThisAddIn" Code="ThisAddIn.vb" CanonicalName="ThisAddIn" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.vb" />
+        <Host Name="Excel" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
+          <HostItem Name="ThisAddIn" Code="ThisAddIn.vb" CanonicalName="AddIn" PublishedHash="501F60F3B8BAF1916C7D50AECC5342A51A6B73BE" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.vb" />
         </Host>
       </FlavorProperties>
     </VisualStudio>
