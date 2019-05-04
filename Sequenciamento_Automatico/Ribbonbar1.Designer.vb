@@ -42,29 +42,32 @@
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Tab1 = Me.Factory.CreateRibbonTab
-        Me.Configuracao = Me.Factory.CreateRibbonGroup
+        Me.Settings = Me.Factory.CreateRibbonGroup
         Me.btn_directoryimport = Me.Factory.CreateRibbonButton
         Me.btn_SequencingInterval = Me.Factory.CreateRibbonButton
         Me.btn_PStandardDay = Me.Factory.CreateRibbonButton
         Me.btn_NPException = Me.Factory.CreateRibbonButton
+        Me.Implementing_Rules = Me.Factory.CreateRibbonGroup
+        Me.btn_ProductPreferenceDay = Me.Factory.CreateRibbonButton
         Me.Tab1.SuspendLayout()
-        Me.Configuracao.SuspendLayout()
+        Me.Settings.SuspendLayout()
+        Me.Implementing_Rules.SuspendLayout()
         Me.SuspendLayout()
         '
         'Tab1
         '
-        Me.Tab1.Groups.Add(Me.Configuracao)
+        Me.Tab1.Groups.Add(Me.Settings)
+        Me.Tab1.Groups.Add(Me.Implementing_Rules)
         Me.Tab1.Label = "Automatic Sequencing"
         Me.Tab1.Name = "Tab1"
         '
-        'Configuracao
+        'Settings
         '
-        Me.Configuracao.Items.Add(Me.btn_directoryimport)
-        Me.Configuracao.Items.Add(Me.btn_SequencingInterval)
-        Me.Configuracao.Items.Add(Me.btn_PStandardDay)
-        Me.Configuracao.Items.Add(Me.btn_NPException)
-        Me.Configuracao.Label = "Settings"
-        Me.Configuracao.Name = "Configuracao"
+        Me.Settings.Items.Add(Me.btn_directoryimport)
+        Me.Settings.Items.Add(Me.btn_PStandardDay)
+        Me.Settings.Items.Add(Me.btn_NPException)
+        Me.Settings.Label = "Basic Settings"
+        Me.Settings.Name = "Settings"
         '
         'btn_directoryimport
         '
@@ -98,6 +101,21 @@
         Me.btn_NPException.Name = "btn_NPException"
         Me.btn_NPException.ShowImage = True
         '
+        'Implementing_Rules
+        '
+        Me.Implementing_Rules.Items.Add(Me.btn_SequencingInterval)
+        Me.Implementing_Rules.Items.Add(Me.btn_ProductPreferenceDay)
+        Me.Implementing_Rules.Label = "Implementing Rules"
+        Me.Implementing_Rules.Name = "Implementing_Rules"
+        '
+        'btn_ProductPreferenceDay
+        '
+        Me.btn_ProductPreferenceDay.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
+        Me.btn_ProductPreferenceDay.Image = Global.Sequenciamento_Automatico.My.Resources.Resources.imagepreferenceproductday
+        Me.btn_ProductPreferenceDay.Label = "Product Preference Day"
+        Me.btn_ProductPreferenceDay.Name = "btn_ProductPreferenceDay"
+        Me.btn_ProductPreferenceDay.ShowImage = True
+        '
         'Ribbonbar1
         '
         Me.Name = "Ribbonbar1"
@@ -105,18 +123,22 @@
         Me.Tabs.Add(Me.Tab1)
         Me.Tab1.ResumeLayout(False)
         Me.Tab1.PerformLayout()
-        Me.Configuracao.ResumeLayout(False)
-        Me.Configuracao.PerformLayout()
+        Me.Settings.ResumeLayout(False)
+        Me.Settings.PerformLayout()
+        Me.Implementing_Rules.ResumeLayout(False)
+        Me.Implementing_Rules.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Tab1 As Microsoft.Office.Tools.Ribbon.RibbonTab
-    Friend WithEvents Configuracao As Microsoft.Office.Tools.Ribbon.RibbonGroup
+    Friend WithEvents Settings As Microsoft.Office.Tools.Ribbon.RibbonGroup
     Friend WithEvents btn_directoryimport As Microsoft.Office.Tools.Ribbon.RibbonButton
     Friend WithEvents btn_SequencingInterval As Microsoft.Office.Tools.Ribbon.RibbonButton
     Friend WithEvents btn_NPException As Microsoft.Office.Tools.Ribbon.RibbonButton
     Friend WithEvents btn_PStandardDay As Microsoft.Office.Tools.Ribbon.RibbonButton
+    Friend WithEvents Implementing_Rules As Microsoft.Office.Tools.Ribbon.RibbonGroup
+    Friend WithEvents btn_ProductPreferenceDay As Microsoft.Office.Tools.Ribbon.RibbonButton
 End Class
 
 Partial Class ThisRibbonCollection

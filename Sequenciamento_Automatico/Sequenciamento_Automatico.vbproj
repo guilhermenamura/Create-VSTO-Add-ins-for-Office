@@ -31,10 +31,10 @@
     </StartupObject>
     <IsWebBootstrapper>False</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <PublishUrl>C:\Users\felix\Desktop\_EUROFARMA\PUBLICAR\</PublishUrl>
+    <PublishUrl>C:\Users\felix\Desktop\_EUROFARMA\PUBLICAR\ORIGINAL\</PublishUrl>
     <InstallUrl />
     <TargetCulture>pt-BR</TargetCulture>
-    <ApplicationVersion>1.0.0.48</ApplicationVersion>
+    <ApplicationVersion>1.0.0.51</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -240,6 +240,12 @@
     <Compile Include="Form_NPExceptionDay.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form_ProductPreferenceDay.Designer.vb">
+      <DependentUpon>Form_ProductPreferenceDay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ProductPreferenceDay.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_PStandardDay.Designer.vb">
       <DependentUpon>Form_PStandardDay.vb</DependentUpon>
     </Compile>
@@ -273,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_NPExceptionDay.resx">
       <DependentUpon>Form_NPExceptionDay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ProductPreferenceDay.resx">
+      <DependentUpon>Form_ProductPreferenceDay.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_PStandardDay.resx">
       <DependentUpon>Form_PStandardDay.vb</DependentUpon>
@@ -325,6 +334,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\imagenpexception.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\imagepreferenceproductday.jpg" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

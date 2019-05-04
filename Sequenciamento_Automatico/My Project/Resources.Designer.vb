@@ -113,6 +113,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property imagepreferenceproductday() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("imagepreferenceproductday", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property imagetimer() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("imagetimer", resourceCulture)

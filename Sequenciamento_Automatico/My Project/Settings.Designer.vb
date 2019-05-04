@@ -112,6 +112,18 @@ Partial Friend NotInheritable Class MySettings
             Me("pstandarday") = value
         End Set
     End Property
+    
+    <Global.System.Configuration.UserScopedSettingAttribute(),  _
+     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+    Public Property productpreferenceday() As String
+        Get
+            Return CType(Me("productpreferenceday"),String)
+        End Get
+        Set
+            Me("productpreferenceday") = value
+        End Set
+    End Property
 End Class
 
 Namespace My

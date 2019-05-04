@@ -36,4 +36,10 @@ Public Class Ribbonbar1
 
         form4.Show()
     End Sub
+
+    Private Sub btn_ProductPreferenceDay_Click(sender As Object, e As RibbonControlEventArgs) Handles btn_ProductPreferenceDay.Click
+        Dim form5 As New Form_ProductPreferenceDay
+
+        form5.Show()
+    End Sub
 End Class

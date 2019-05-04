@@ -17,5 +17,8 @@
     <Setting Name="pstandarday" Type="System.String" Scope="User">
       <Value Profile="(Default)">Monday Tuesday Wednesday Thursday Friday </Value>
     </Setting>
+    <Setting Name="productpreferenceday" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
